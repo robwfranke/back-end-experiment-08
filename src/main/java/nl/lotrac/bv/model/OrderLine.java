@@ -28,12 +28,12 @@ public class OrderLine {
 //    @OneToMany(mappedBy = "orderLine")
 
 
-    @ManyToMany
-    @JoinTable(
-            name = "couple_orderline_jobs",
-            joinColumns = @JoinColumn(name = "order_line_id"),
-            inverseJoinColumns = @JoinColumn(name = "jobs_id"))
-    Set<Job> koppel = new HashSet<>();
+//    @ManyToMany
+//    @JoinTable(
+//            name = "couple_orderline_jobs",
+//            joinColumns = @JoinColumn(name = "order_line_id"),
+//            inverseJoinColumns = @JoinColumn(name = "jobs_id"))
+//    Set<Job> koppel = new HashSet<>();
 
 
 
@@ -46,13 +46,13 @@ public class OrderLine {
         this.order = order;
     }
 
-    public Set<Job> getKoppel() {
-        return koppel;
-    }
-
-    public void setKoppel(Set<Job> koppel) {
-        this.koppel = koppel;
-    }
+//    public Set<Job> getKoppel() {
+//        return koppel;
+//    }
+//
+//    public void setKoppel(Set<Job> koppel) {
+//        this.koppel = koppel;
+//    }
 
     public String getDwg_number() {
         return dwg_number;

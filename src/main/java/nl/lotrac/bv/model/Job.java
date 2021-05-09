@@ -22,20 +22,18 @@ public class Job {
     private String department;
 
 
-//    @ManyToOne
-//    OrderLine orderLine;
 
 
-    @ManyToMany(mappedBy = "koppel")
-    Set<OrderLine> likes = new HashSet<>();
+//    @ManyToMany(mappedBy = "koppel")
+//    Set<OrderLine> likes = new HashSet<>();
 
-    public Set<OrderLine> getLikes() {
-        return likes;
-    }
-
-    public void setLikes(Set<OrderLine> likes) {
-        this.likes = likes;
-    }
+//    public Set<OrderLine> getLikes() {
+//        return likes;
+//    }
+//
+//    public void setLikes(Set<OrderLine> likes) {
+//        this.likes = likes;
+//    }
 
     public String getJob_name() {
         return job_name;
