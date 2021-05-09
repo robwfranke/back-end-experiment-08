@@ -13,6 +13,7 @@ public class Order {
     private long id;
 
 
+
     //    @Id
     @Column(nullable = false, unique = true)
     private String orderdate;
@@ -28,6 +29,13 @@ public class Order {
     List<OrderLine> orderlines;
 
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getOrderdate() {
         return orderdate;
@@ -44,4 +52,21 @@ public class Order {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public List<OrderLine> getOrderlines() {
+        return orderlines;
+    }
+
+    public void setOrderlines(List<OrderLine> orderlines) {
+        this.orderlines = orderlines;
+    }
 }
+
