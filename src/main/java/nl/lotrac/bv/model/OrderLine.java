@@ -15,7 +15,7 @@ public class OrderLine {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     //    @Id
-    @Column(nullable = false, unique = true)
+    @Column
     private String dwg_number;
 
     @Column(nullable = false, length = 255)

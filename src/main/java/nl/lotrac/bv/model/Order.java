@@ -14,9 +14,8 @@ public class Order {
 
 
 
-    //    @Id
     @Column(nullable = false, unique = true)
-    private String orderdate;
+    private String ordername;
 
     @Column(nullable = false, length = 255)
     private String status;
@@ -24,9 +23,9 @@ public class Order {
 
     @ManyToOne
     Customer customer;
-
-    @OneToMany(mappedBy = "order")
-    List<OrderLine> orderlines;
+//
+//    @OneToMany(mappedBy = "order")
+//    List<OrderLine> orderlines;
 
 
     public long getId() {
@@ -37,12 +36,12 @@ public class Order {
         this.id = id;
     }
 
-    public String getOrderdate() {
-        return orderdate;
+    public String getOrdername() {
+        return ordername;
     }
 
-    public void setOrderdate(String orderdate) {
-        this.orderdate = orderdate;
+    public void setOrdername(String ordername) {
+        this.ordername = ordername;
     }
 
     public String getStatus() {
@@ -61,12 +60,12 @@ public class Order {
         this.customer = customer;
     }
 
-    public List<OrderLine> getOrderlines() {
-        return orderlines;
-    }
+//    public List<OrderLine> getOrderlines() {
+//        return orderlines;
+//    }
 
-    public void setOrderlines(List<OrderLine> orderlines) {
-        this.orderlines = orderlines;
-    }
+//    public void setOrderlines(List<OrderLine> orderlines) {
+//        this.orderlines = orderlines;
+//    }
 }
 
